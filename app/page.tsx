@@ -27,24 +27,25 @@ export default function Home() {
   ];
 
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <section>
-          <h2>AUTOATENDIMENTO</h2>
-          <div className="w-full grid grid-cols-4 gap-6 mt-10">
+    <main>
+      <section className="w-full bg-purple-950">
+        <div className="m-auto font-sans w-3/4 p-20 flex flex-col gap-4">
+          <h1 className="text-6xl font-bold text-white">Bem-vindo à Fabreu</h1>
+          <h2 className="text-2xl text-purple-900">
+            Sua conexão de confiança para internet e entretenimento
+          </h2>
+          <div className="flex grid-cols-4 justify-between mt-10">
             {teste.map((item, index) => (
-              <Card key={index} className="w-full text-center bg-purple-900">
-                <div className="flex flex-col gap-2 p-6 items-center">
-                  <h2 className="text-2xl font-semibold text-amber-400">
-                    {item.title}
-                  </h2>
-                  <p className="text-amber-50">{item.description}</p>
-                </div>
+              <Card key={index} className="p-6 bg-white shadow-md">
+                <h3 className="text-2xl font-semibold mb-2 text-purple-900">
+                  {item.title}
+                </h3>
+                <p className="text-gray-700">{item.description}</p>
               </Card>
             ))}
           </div>
-        </section>
-      </main>
-    </div>
+        </div>
+      </section>
+    </main>
   );
 }
