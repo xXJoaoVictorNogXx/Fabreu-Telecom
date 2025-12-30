@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import { Mail } from "lucide-react";
+import { Mail, Phone } from "lucide-react";
 import Link from "next/link";
 
 export function Footer() {
@@ -37,6 +37,7 @@ export function Footer() {
           <p>Conceição do Lago Açú-MA</p>
           <p>Lago Verde-MA</p>
           <p>Presidente Dutra-MA</p>
+          <p>São José dos Basílios-MA</p>
         </div>
         <div>
           <h2 className="font-bold text-amber-400">FALE CONOSCO</h2>
@@ -44,12 +45,22 @@ export function Footer() {
           <p>Central de Atendimento</p>
           <ul>
             <li>
-              <Link href="" onClick={handleWhatsAppClick}>
+              <Link
+                href=""
+                onClick={handleWhatsAppClick}
+                className="flex items-center gap-2 "
+              >
+                <Phone className="text-amber-400" />
                 (99) 98422-7474
               </Link>
             </li>
             <li>
-              <Link href="" onClick={handleWhatsAppClick}>
+              <Link
+                href=""
+                onClick={handleWhatsAppClick}
+                className="flex items-center gap-2 "
+              >
+                <Phone className="text-amber-400" />
                 0800 099-9800
               </Link>
             </li>

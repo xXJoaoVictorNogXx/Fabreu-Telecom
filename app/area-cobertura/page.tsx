@@ -33,10 +33,6 @@ export default function AreaCobertura() {
             </li>
             <li className="flex items-center gap-2">
               <MapPin className="text-amber-400" />
-              Alto Alegre
-            </li>
-            <li className="flex items-center gap-2">
-              <MapPin className="text-amber-400" />
               Bacabal
             </li>
             <li className="flex items-center gap-2">
@@ -50,6 +46,10 @@ export default function AreaCobertura() {
             <li className="flex items-center gap-2">
               <MapPin className="text-amber-400" />
               Presidente Dutra
+            </li>
+            <li className="flex items-center gap-2">
+              <MapPin className="text-amber-400" />
+              São José dos Basílios-MA
             </li>
           </ul>
         </div>
